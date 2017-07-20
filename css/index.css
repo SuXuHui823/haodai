@@ -1,0 +1,87 @@
+.main {
+  width: 325px;
+  height: 400px;
+  background: #525a5a;
+  margin: 150px auto; }
+  .main .m_one {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    padding: 14px 20px; }
+  .main .m_two {
+    padding: 5px 20px;
+    height: 20px;
+    color: #fff; }
+    .main .m_two p:nth-of-type(1) {
+      float: left; }
+    .main .m_two p:nth-of-type(2) {
+      float: right; }
+  .main .ipt {
+    height: 66px; }
+    .main .ipt .i_ipt {
+      width: 280px;
+      height: 40px;
+      line-height: 40px;
+      background: #fff;
+      margin-left: 20px;
+      font-size: 16px;
+      display: block;
+      clear: both;
+      content: ""; }
+      .main .ipt .i_ipt .p_l {
+        float: left;
+        width: 185px;
+        height: 40px;
+        padding-left: 5px;
+        color: #333; }
+      .main .ipt .i_ipt .p_c {
+        width: 44px;
+        float: left;
+        height: 40px;
+        text-align: center;
+        padding-right: 5px;
+        color: #666;
+        border-right: 1px solid #ccc; }
+      .main .ipt .i_ipt .p_r {
+        width: 40px;
+        height: 40px;
+        float: right;
+        position: relative;
+        cursor: pointer;
+        border-bottom: 1px solid #ccc; }
+        .main .ipt .i_ipt .p_r p {
+          position: absolute;
+          top: 18px;
+          right: 15px; }
+        .main .ipt .i_ipt .p_r .p1 {
+          top: 10px; }
+        .main .ipt .i_ipt .p_r .p2 {
+          display: none; }
+        .main .ipt .i_ipt .p_r .menu1 {
+          width: 280px;
+          height: 210px;
+          position: absolute;
+          top: 40px;
+          left: -240px;
+          display: none; }
+          .main .ipt .i_ipt .p_r .menu1 li {
+            width: 270px;
+            height: 30px;
+            line-height: 30px;
+            padding-left: 10px;
+            background: #fff;
+            border-bottom: 1px solid #ccc; }
+  .main .m_four {
+    height: 40px;
+    line-height: 40px;
+    background: #0094ef;
+    color: #fff;
+    margin: 5px 25px;
+    text-align: center;
+    margin-top: 15px; }
+  .main .m_five {
+    text-align: center;
+    color: #cecece;
+    padding: 15px 35px; }
+
+/*# sourceMappingURL=index.css.map */

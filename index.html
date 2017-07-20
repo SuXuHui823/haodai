@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" href="font-awesome/css/font-awesome.css" />
+		<link rel="stylesheet" href="css/index.css" />
+		<script src="js/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript">
+			window.onload = function(){
+				//点击下拉
+				$(".p_r").click(function(){
+					$(this).find("ul").stop().slideToggle();
+				})
+				$(".p_r .menu1 li").click(function(){
+					$(".p_r").find(".menu1").stop().slideUp();
+					var pl = $(this).find(".sp").html();
+					$(this).parents(".i_ipt").find(".p_l").html(pl);
+					var pc = $(this).find(".spn").html();
+					$(this).parents(".i_ipt").find(".p_c").html(pc);
+				})
+			}
+		</script>
+	</head>
+	<body>
+		<div class="main">
+			<p class="m_one">快速搜索消费贷款</p>
+			<div class="m_two">
+				<p>货款金额:</p>
+				<p>不足一万可用小数表示</p>
+			</div>
+			<div class="ipt">
+				<div class="i_ipt">
+					<p class="p_l">5</p>
+					<p class="p_c">万元</p>
+					<div class="p_r">
+						<p class="p1 fa fa-sw fa-sort-down"></p>
+						<p class="p2 fa fa-sw fa-sort-up"></p>
+						<ul class="menu1">
+							<li><span class="sp">10</span>万元</li>
+							<li><span class="sp">15</span>万元</li>
+							<li><span class="sp">20</span>万元</li>
+							<li><span class="sp">25</span>万元</li>
+							<li><span class="sp">30</span>万元</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="ipt">
+				<div class="i_ipt">
+					<p class="p_l">1</p>
+					<p class="p_c">年</p>
+					<div class="p_r">
+						<p class="p1 fa fa-sw fa-sort-down"></p>
+						<p class="p2 fa fa-sw fa-sort-up"></p>
+						<ul class="menu1">
+							<li><span class="sp">6</span><span class="spn">个月</span></li>
+							<li><span class="sp">1</span><span class="spn">年</span></li>
+							<li><span class="sp">18</span><span class="spn">个月</span></li>
+							<li><span class="sp">2</span><span class="spn">年</span></li>
+							<li><span class="sp">3</span><span class="spn">年</span></li>
+							<li><span class="sp">5</span><span class="spn">年</span></li>
+							<li><span class="sp">10</span><span class="spn">年</span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="m_four">
+				搜索一下
+			</div>
+			<p class="m_five">
+				9164种信贷产品 2000家银行 1403家小贷公司
+			</p>
+		</div>
+	</body>
+</html>
